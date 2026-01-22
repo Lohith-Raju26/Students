@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Notes Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>📚 Student Notes Hub</h1>
+  <p>Learn • Share • Grow — ₹5/month</p>
+</header>
+
+<section class="card">
+  <h2>Upload Your Notes</h2>
+  <input type="text" id="title" placeholder="Subject / Topic">
+  <input type="file" id="file">
+  <button onclick="uploadNote()">Upload</button>
+</section>
+
+<section class="card">
+  <h2>Available Notes</h2>
+  <ul id="notesList"></ul>
+</section>
+
+<footer>
+  <p>© 2026 Student Notes Hub</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
