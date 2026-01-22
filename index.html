@@ -9,23 +9,24 @@
 
 <header>
   <h1>📚 Student Notes Hub</h1>
-  <p>Learn • Share • Grow — ₹5/month</p>
+  <p>Search. Study. Share.</p>
 </header>
 
-<section class="card">
-  <h2>Upload Your Notes</h2>
-  <input type="text" id="title" placeholder="Subject / Topic">
-  <input type="file" id="file">
-  <button onclick="uploadNote()">Upload</button>
-</section>
+<div class="container">
 
-<section class="card">
-  <h2>Available Notes</h2>
-  <ul id="notesList"></ul>
-</section>
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search subject or topic (Eg: Physics, DBMS, Calculus)"
+    onkeyup="searchNotes()"
+  >
+
+  <div id="notesContainer"></div>
+
+</div>
 
 <footer>
-  <p>© 2026 Student Notes Hub</p>
+  <p>Made by students • ₹5/month</p>
 </footer>
 
 <script src="script.js"></script>
